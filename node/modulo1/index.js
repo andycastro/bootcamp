@@ -19,7 +19,7 @@ function checkUserExists(req, res, next){
     return res.status(400).json({ error: "User name is required" });
   }
   return next();
-};
+}; // midware local
 
 function checkUserInArray(req, res, next){
   const user = users[req.params.index];
